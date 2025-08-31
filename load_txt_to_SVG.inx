@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>MD→SVGテキスト流し込み</name>
+  <id>jp.hanta.md_fill</id>
+
+  <!-- 作業フォルダを明示（空なら自動探索） -->
+  <param name="base_dir" type="string" gui-text="基準フォルダ（空=自動）"></param>
+
+  <param name="indent_fullwidth" type="boolean" gui-text="行頭インデント（全角スペース）">false</param>
+  <param name="force_newpage_marker" type="string" gui-text="改ページマーカー（行単独）">\newpage</param>
+  <param name="settings_json" type="string" gui-text="設定ファイル名（同フォルダ）">settings.json</param>
+
+  <effect needs-document="true">
+    <object-type>all</object-type>
+    <effects-menu submenu="Hanta"/>
+    <menu-tip>内容.mdと書式.cssを読み、p1,p2,…へ流し込み。p2以降は雛形複製。</menu-tip>
+  </effect>
+
+  <script>
+    <!-- extensions フォルダを基準にサブフォルダまで含める -->
+    <command reldir="extensions" interpreter="python">LoadTxtToSVG/load_txt_to_SVG.py</command>
+  </script>
+</inkscape-extension>
