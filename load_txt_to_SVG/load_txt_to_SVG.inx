@@ -18,6 +18,6 @@
 
   <script>
     <!-- extensions フォルダを基準にサブフォルダまで含める -->
-    <command reldir="extensions" interpreter="python">LoadTxtToSVG/load_txt_to_SVG.py</command>
+    <command reldir="extensions" interpreter="python">load_txt_to_SVG/load_txt_to_SVG.py</command>
   </script>
 </inkscape-extension>

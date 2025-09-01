@@ -1,0 +1,17 @@
+{
+    "lines_per_page": {
+        "p1": 21,
+        "p2": 40,
+        "default": 40
+    },
+    "cols_per_line": {
+        "p1": 86,
+        "p2": 86,
+        "default": 86
+    },
+    "style_defaults": {
+        "fill": "#000000",
+        "stroke": "none",
+        "line-height": "1.65"
+    }
+}
