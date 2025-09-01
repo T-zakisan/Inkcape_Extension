@@ -1,0 +1,14 @@
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Load MD to t1</name>
+  <id>load_txt_to_SVG</id>
+  <param name="note" type="description">同フォルダの「内容.md」を p1/t1 に流し込みます。</param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu name="Report Tools"/>
+    </effects-menu>
+    <script>
+      <command reldir="INKSCAPE_EXTENSION_SCRIPT">load_txt_to_SVG.py</command>
+    </script>
+  </effect>
+</inkscape-extension>
